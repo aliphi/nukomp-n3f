@@ -1,0 +1,34 @@
+.animatedButton {
+  display: inline-block;
+  color: #fff;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.872) 0px 1em 2em;
+
+  .on {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #4285f4;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+
+  .off {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4285f4;
+    transition: all 8s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+}
